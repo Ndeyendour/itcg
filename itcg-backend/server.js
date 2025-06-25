@@ -43,3 +43,9 @@ app.use("/api/investors", investorRoutes);
 const userRoutes = require("./routes/users");
 app.use("/api/users", userRoutes);
 
+// Ajoutez cette route AVANT les autres routes
+app.get("/", (req, res) => {
+  res.send("✨ ITCG Backend est en ligne !");
+});
+
+// ... (le reste de votre code existant)
