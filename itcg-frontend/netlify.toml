@@ -1,4 +1,0 @@
-[build]
-base = "itcg-frontend"          # <-- indique que le frontend est dans ce dossier
-command = "npm run build"  # <-- ou autre commande adaptée à ton projet (ex: yarn build)
-publish = "dist"           # <-- dossier généré par le build (souvent "dist" ou "build")
