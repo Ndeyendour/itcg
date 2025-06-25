@@ -1,9 +1,4 @@
 [build]
-  base = "frontend"      # Dossier où exécuter la commande
-  publish = "itcg-frontend/dist"
-  command = "npm install && npm run build"
-
-[[redirects]]
-  from = "/api/*"
-  to = "https://itcg.onrender.com/api/:splat"  # Proxy vers le backend
-  status = 200
+base = "itcg-frontend"          # <-- indique que le frontend est dans ce dossier
+command = "npm run build"  # <-- ou autre commande adaptée à ton projet (ex: yarn build)
+publish = "dist"           # <-- dossier généré par le build (souvent "dist" ou "build")
