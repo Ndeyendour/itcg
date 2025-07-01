@@ -22,7 +22,7 @@ const PrivacyPolicyPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Privacy Policy"} />
+      <Breadcrumb title={"Schéma de garantie de crédit pour startups"} />
 
       {/* PrivacyPolicyInner */}
       <PrivacyPolicyInner />

@@ -44,6 +44,9 @@ import HomePageSix from "./pages/HomePageSix.jsx";
 import Gotomarketguide from "./pages/Gotomarketguide.jsx";
 import MobileMenu from "./components/MobileMenu.jsx";
 import AdminDashbord from "./pages/AdminDashbord.jsx";
+import Reconnaissance from "./pages/Reconnaissaine.jsx";
+import Verifiercert from "./pages/Verifiercert.jsx";
+import AvisPage from "./pages/AvisPage.jsx";
 
 
 
@@ -72,6 +75,11 @@ function App() {
         <Route exact path="/gotomarketguide" element={<Gotomarketguide/>} />
         <Route exact path="/mobilemenu" element={<MobileMenu/>} />
         <Route exact path="/admin" element={<AdminDashbord/>} />
+        <Route exact path="/reconnaissance" element={<Reconnaissance/>} />
+        <Route exact path="/verifier-le-certificat" element={<Verifiercert/>} />
+        <Route exact path="/avis" element={<AvisPage/>} />
+
+
         {/* <Route exact path="/register" element={<RegisterPage/>} />
         <Route exact path="/login" element={<LoginPage/>} /> */}
 

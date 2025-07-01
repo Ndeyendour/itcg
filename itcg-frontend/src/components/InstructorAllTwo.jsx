@@ -15,10 +15,9 @@ const InstructorAllTwo = () => {
       />
       <div className='container'>
         <div className='section-heading text-center'>
-          <h2 className='mb-24'>Course Instructors</h2>
+          <h2 className='mb-24'>Cadre des incubateurs</h2>
           <p className=''>
-            Join us on this journey of discovery, growth, and transformation.
-            Together, let's shape a brighter future
+            Les incubateurs jouent un rôle essentiel dans la croissance des startups. Ils fournissent les ressources nécessaires, telles que l'infrastructure, le mentorat et le soutien financier, pour nourrir et soutenir l'innovation des startups. L’Inde compte plus de 400 incubateurs, dont la plupart sont à un stade naissant. Startup India vise à renforcer les capacités des incubateurs existants et à fournir également un soutien à la création de nouveaux incubateurs.
           </p>
         </div>
         <div className='row gy-4'>

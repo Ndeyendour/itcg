@@ -57,10 +57,10 @@ const HeaderTwo = () => {
       label: "À propos",
       links: [
         { to: "/about-Two", label: "Initiative ITCG" },
-        { to: "#", label: "Demander le logo ITCG" },
+        // { to: "#", label: "Demander le logo ITCG" },
         { to: "/blog", label: "Bulletin d'information" },
         { to: "/faq", label: "Questions fréquentes (FAQ)" },
-        { to: "#", label: "Plan d'action d'ITCG" },
+        { to: "/plan-itcg.pdf", label: "Plan d'action d'ITCG", external: true },
         { to: "/contact", label: "Contactez-nous" },
         { to: "#", label: "Évolution d'ITCG | Rapport sur 5 ans" },
         { to: "#", label: "ITCG | Perspectives d’avenir" },
@@ -73,31 +73,31 @@ const HeaderTwo = () => {
         { to: "/about-four", label: "Reconnaissance et avantages de l’ITCG" },
         { to: "/reconnaissance", label: "Demander la reconnaissance ITCG" },
         { to: "/garantie", label: "Demander des exonérations fiscales" },
-        { to: "#", label: "Vérifier/Télécharger le certificat" },
-        { to: "#", label: "Accéder/Modifier les détails du certificat" },
+        { to: "/verifier-le-certificat", label: "Vérifier/Télécharger le certificat" },
+        // { to: "#", label: "Accéder/Modifier les détails du certificat" },
         { to: "#", label: "Directives de reconnaissance ITCG" },
-        { to: "#", label: "Notifications d’exonération d’impôt sur le revenu" },
-        { to: "#", label: "Registre de l’écosystème des startups Bharat" },
+        { to: "/avis", label: "Notifications d’exonération d’impôt sur le revenu" },
+        // { to: "#", label: "Registre de l’écosystème des startups Bharat" },
       ],
     },
     {
       label: "Financement",
       links: [
-        { to: "#", label: "Programme de fonds d’amorçage ITCG" },
-        { to: "#", label: "ITCG Investor Connect" },
+        { to: "/about", label: "Programme de fonds d’amorçage ITCG" },
+        // { to: "#", label: "ITCG Investor Connect" },
         { to: "/privacy-policy", label: "Schéma de garantie de crédit pour startups" },
         { to: "/about", label: "Guide de financement" },
-        { to: "#", label: "Programmes et politiques du gouvernement central" },
+        { to: "/privacy-policy", label: "Programmes et politiques" },
       ],
     },
     {
       label: "Régime",
       links: [
-        { to: "#", label: "Support réglementaire ITCG" },
-        { to: "#", label: "Programmes et politiques du gouvernement central" },
+        { to: "/event-details", label: "Support réglementaire ITCG" },
+        { to: "/privacy-policy", label: "Programmes et politiques du gouvernement central" },
         { to: "/about-three", label: "Entrepreneuriat féminin" },
-        { to: "#", label: "Cadre des incubateurs" },
-        { to: "#", label: "Découvrez les politiques startup de votre État/UT" },
+        { to: "/instructor-two", label: "Cadre des incubateurs" },
+        { to: "/privacy-policy", label: "Découvrez les politiques startup de votre État/UT" },
       ],
     },
     {
@@ -139,7 +139,7 @@ const HeaderTwo = () => {
     {
       label: "Réseau",
       links: [
-        { to: "#", label: "Plateforme de mentorat MAARG" },
+        { to: "#", label: "Plateforme de mentorat MAG" },
         { to: "/product", label: "Startups" },
         { to: "#", label: "Mentors" },
         { to: "#", label: "Incubateurs" },
@@ -186,14 +186,14 @@ const HeaderTwo = () => {
             {/* Buttons Start */}
             <div className='d-lg-flex d-none flex-align flex-md-nowrap flex-wrap gap-16 flex-shrink-0'>
               <Link
-                to='/login'
+                to='/sign-in'
                 className='btn btn-outline-main rounded-pill flex-align gap-8'
               >
                 Sign In
                 <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
               </Link>
               <Link
-                to='/register'
+                to='/sign-up'
                 className='btn btn-main rounded-pill flex-align gap-8'
               >
                 Sign Up
@@ -239,12 +239,24 @@ const HeaderTwo = () => {
                               pathname === link.to && "activePage"
                             }`}
                           >
-                            <Link
-                              to={link.to}
-                              className='nav-submenu__link hover-bg-neutral-30'
-                            >
-                              {link.label}
-                            </Link>
+                           {link.external ? (
+  <a
+    href={link.to}
+    target='_blank'
+    rel='noopener noreferrer'
+    className='nav-submenu__link hover-bg-neutral-30'
+  >
+    {link.label}
+  </a>
+) : (
+  <Link
+    to={link.to}
+    className='nav-submenu__link hover-bg-neutral-30'
+  >
+    {link.label}
+  </Link>
+)}
+
                           </li>
                         ))}
                       </ul>
@@ -294,12 +306,24 @@ const HeaderTwo = () => {
                     <ul className={`nav-submenu scroll-sm`}>
                       {item.links.map((link, linkIndex) => (
                         <li key={linkIndex} className='nav-submenu__item'>
-                          <Link
-                            to={link.to}
-                            className='nav-submenu__link hover-bg-neutral-30'
-                          >
-                            {link.label}
-                          </Link>
+                          {link.external ? (
+  <a
+    href={link.to}
+    target='_blank'
+    rel='noopener noreferrer'
+    className='nav-submenu__link hover-bg-neutral-30'
+  >
+    {link.label}
+  </a>
+) : (
+  <Link
+    to={link.to}
+    className='nav-submenu__link hover-bg-neutral-30'
+  >
+    {link.label}
+  </Link>
+)}
+
                         </li>
                       ))}
                     </ul>

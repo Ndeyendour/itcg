@@ -1,6 +1,7 @@
 import Breadcrumb from "../components/Breadcrumb";
 import FooterOne from "../components/FooterOne";
 import HeaderOne from "../components/HeaderOne";
+import HeaderTwo from "../components/HeaderTwo";
 import SignUpInner from "../components/SignUpInner";
 import Animation from "../helper/Animation";
 import Preloader from "../helper/Preloader";
@@ -15,7 +16,7 @@ const SignUpPage = () => {
       <Animation />
 
       {/* HeaderTwo */}
-      <HeaderOne />
+      <HeaderTwo />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Sign Up"} />

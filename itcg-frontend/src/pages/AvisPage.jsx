@@ -1,15 +1,15 @@
-import BrandTwo from "../components/BrandTwo";
+import Avis from "../components/Avis";
 import Breadcrumb from "../components/Breadcrumb";
+import Certificatcheck from "../components/Certificatcheck";
 import CertificateOne from "../components/CertificateOne";
-import FAQInnerOne from "../components/FAQInnerOne";
 import FooterOne from "../components/FooterOne";
 import HeaderOne from "../components/HeaderOne";
 import HeaderTwo from "../components/HeaderTwo";
-import TestimonialsThree from "../components/TestimonialsThree";
+import TutorSectionOne from "../components/TutorSectionOne";
 import Animation from "../helper/Animation";
 import Preloader from "../helper/Preloader";
 
-const FaqPage = () => {
+const AvisPage = () => {
   return (
     <>
       {/* Preloader */}
@@ -22,16 +22,10 @@ const FaqPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Questions fréquentes (FAQ)"} />
+      <Breadcrumb title={"Notifications d’exonération d’impôt sur le revenu "} />
 
-      {/* FAQInnerOne */}
-      <FAQInnerOne />
-
-      {/* TestimonialsThree */}
-      <TestimonialsThree />
-
-      {/* BrandTwo */}
-      <BrandTwo />
+      {/* TutorSectionOne */}
+      <Avis />
 
       {/* CertificateOne */}
       <CertificateOne />
@@ -42,4 +36,4 @@ const FaqPage = () => {
   );
 };
 
-export default FaqPage;
+export default AvisPage;
