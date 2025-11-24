@@ -11,26 +11,25 @@ router.post('/register', async (req, res) => {
   try {
     const { email, password, role, linkedStartup } = req.body;
 
-    // Vérifier si l'utilisateur existe déjà
+    const allowedRoles = ['user', 'startup'];
+    const userRole = role && allowedRoles.includes(role) ? role : 'user';
+
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: 'Email déjà utilisé' });
     }
 
-    // Hasher le mot de passe
     const hashedPassword = await bcrypt.hash(password, 12);
 
-    // Créer un nouvel utilisateur
     const newUser = new User({
       email,
       password: hashedPassword,
-      role: role || 'user',
+      role: userRole,
       linkedStartup
     });
 
     await newUser.save();
 
-    // Créer un token JWT
     const token = jwt.sign(
       { userId: newUser._id, role: newUser.role },
       JWT_SECRET,
@@ -42,6 +41,7 @@ router.post('/register', async (req, res) => {
     res.status(500).json({ message: 'Erreur lors de la création du compte' });
   }
 });
+
 
 // Login
 router.post('/login', async (req, res) => {

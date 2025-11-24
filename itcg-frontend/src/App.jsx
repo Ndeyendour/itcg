@@ -47,6 +47,8 @@ import AdminDashbord from "./pages/AdminDashbord.jsx";
 import Reconnaissance from "./pages/Reconnaissaine.jsx";
 import Verifiercert from "./pages/Verifiercert.jsx";
 import AvisPage from "./pages/AvisPage.jsx";
+import ProgrammesPages from "./pages/ProgrammesPages.jsx";
+import PartenersPage from "./pages/PartenersPage.jsx";
 
 
 
@@ -78,6 +80,9 @@ function App() {
         <Route exact path="/reconnaissance" element={<Reconnaissance/>} />
         <Route exact path="/verifier-le-certificat" element={<Verifiercert/>} />
         <Route exact path="/avis" element={<AvisPage/>} />
+        <Route exact path="/programmes" element={<ProgrammesPages/>} />
+        <Route exact path="/partenaires" element={<PartenersPage/>} />
+
 
 
         {/* <Route exact path="/register" element={<RegisterPage/>} />

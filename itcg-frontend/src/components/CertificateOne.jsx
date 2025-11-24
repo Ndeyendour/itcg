@@ -12,16 +12,16 @@ const CertificateOne = () => {
                   <div className='certificate__content'>
                     <div className='flex-align gap-8 mb-16 wow bounceInDown'>
                       <span className='w-8 h-8 bg-white rounded-circle' />
-                      <h5 className='text-white mb-0'>Get Certificate</h5>
+                      <h5 className='text-white mb-0'>Obtenez votre certificat</h5>
                     </div>
                     <h2 className='text-white mb-40 fw-medium wow bounceIn'>
-                      Get Quality Skills Certificate From the EduAll
+                      Obtenez votre certificat d'engagement solidaire avec la Maison des Associations
                     </h2>
                     <Link
-                      to='#'
+                      to='/certificate-application'
                       className='btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800 wow bounceInUp'
                     >
-                      Get Started Now
+                      Commencez maintenant
                       <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                     </Link>
                   </div>
@@ -29,8 +29,8 @@ const CertificateOne = () => {
                 <div className='col-xl-6 d-xl-block d-none'>
                   <div className='certificate__thumb' data-aos='fade-up-left'>
                     <img
-                      src='assets/images/thumbs/certificate-img.png'
-                      alt=''
+                      src='assets/images/thumbs/maison-association-certificat.png'
+                      alt='Certificat engagement solidaire'
                       data-tilt=''
                       data-tilt-max={8}
                       data-tilt-speed={500}

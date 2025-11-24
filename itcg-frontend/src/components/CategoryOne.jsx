@@ -14,215 +14,199 @@ const CategoryOne = () => {
     pauseOnHover: true,
     arrows: false,
     draggable: true,
-
     responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        },
-      },
+      { breakpoint: 1199, settings: { slidesToShow: 3, arrows: false } },
+      { breakpoint: 767, settings: { slidesToShow: 2, arrows: false } },
+      { breakpoint: 575, settings: { slidesToShow: 1, arrows: false } },
     ],
   };
+
   return (
     <section className='category py-120 position-relative z-1 mash-bg-main mash-bg-main-two mash-reverse'>
       <div className='container'>
+
+        {/* Section Heading */}
         <div className='section-heading text-center'>
           <div className='flex-align d-inline-flex gap-8 mb-16 wow bounceInDown'>
             <span className='text-main-600 text-2xl d-flex'>
-              <i className='ph-bold ph-book' />
+              <i className='ph-bold ph-hand-heart' />
             </span>
-            <h5 className='text-main-600 mb-0'>Reconnaissance</h5>
+            <h5 className='text-main-600 mb-0'>Services & Accompagnement</h5>
           </div>
+
           <h2 className='mb-24 wow bounceIn'>
-            Obtenez la reconnaissance officielle de votre Startup par l'ITCG
+            Découvrez les services de la Maison des Associations de Guédiawaye
           </h2>
-          {/* <p className=' wow bounceInUp'>
-            Our platform is built on the principles of innovation, quality, and
-            inclusivity, aiming to provide a seamless learning
-          </p> */}
         </div>
+
+        {/* Slider */}
         <Slider ref={sliderRef} {...settings} className='category-item-slider'>
+
+          {/* ÉLÉMENT 1 : Accompagnement des associations */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30 hover-border-main-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={200}
           >
             <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon1.png'
-                className='animate__flipInY'
-                alt=''
-              />
+              <img src='assets/images/icons/category-icon1.png' alt='' />
             </span>
             <h4 className='display-four mb-16 text-neutral-700'>
-              Vérifiez votre éligibilité
+              Accompagnement Associatif
             </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-             Assurez-vous que votre entreprise répond aux critères définis pour être reconnue par l'ITCG.
+              Formations, coaching, appui à la gestion, structuration
+              et renforcement de capacités pour les organisations locales.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-600 hover-bg-main-600 hover-text-white hover-border-main-600'
+              to='/accompagnement'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-600 hover-bg-main-600 hover-text-white'
             >
-              Verifier
+              En savoir plus
             </Link>
           </div>
+
+          {/* ÉLÉMENT 2 : Incubation / Entrepreneuriat */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30 hover-border-main-two-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={400}
           >
-            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon2.png'
-                className='animate__flipInY'
-                alt=''
-              />
+            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24'>
+              <img src='assets/images/icons/category-icon2.png' alt='' />
             </span>
-            <h4 className='display-four mb-16 text-neutral-700'>Obtenez la reconnaissance</h4>
+            <h4 className='display-four mb-16 text-neutral-700'>
+              Incubateur & Startups Locales
+            </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-              Accédez à la plateforme et soumettez votre demande de reconnaissance par l'ITCG.
+              Programme d’incubation, mentorat, ateliers pratiques
+              et soutien aux jeunes entrepreneurs du territoire.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white hover-border-main-two-600'
+              to='/incubation'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white'
             >
-            Postuler
+              Rejoindre
             </Link>
           </div>
+
+          {/* ÉLÉMENT 3 : Expression des besoins */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-three-25 border border-neutral-30 hover-border-main-three-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={600}
           >
             <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-three-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon3.png'
-                className='animate__flipInY'
-                alt=''
-              />
+              <img src='assets/images/icons/category-icon3.png' alt='' />
             </span>
             <h4 className='display-four mb-16 text-neutral-700'>
-             Recevez des notifications
+              Expression des Besoins
             </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-              Restez informé des mises à jour sur la reconnaissance et les exemptions fiscales.
+              Soumettez vos besoins en formation, appui technique
+              ou accompagnement via notre formulaire en ligne.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-three-600 hover-bg-main-three-600 hover-text-white hover-border-main-three-600'
+              to='/besoins'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-three-600 hover-bg-main-three-600 hover-text-white'
             >
-              S'inscrire
+              Soumettre
             </Link>
           </div>
+
+          {/* ÉLÉMENT 4 : Événements & Conférences */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30 hover-border-main-two-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={800}
           >
-            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon4.png'
-                className='animate__flipInY'
-                alt=''
-              />
+            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24'>
+              <img src='assets/images/icons/category-icon4.png' alt='' />
             </span>
             <h4 className='display-four mb-16 text-neutral-700'>
-              Validez votre certificat
+              Conférences & Ateliers
             </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-             Vérifiez l'authenticité de votre certificat de reconnaissance ou d'exonération fiscale.
+              Participez aux conférences du samedi, tables rondes,
+              masterclass et initiatives citoyennes.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white hover-border-main-two-600'
+              to='/evenements'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white'
             >
-            Verifier
+              Voir les événements
             </Link>
           </div>
+
+          {/* ÉLÉMENT 5 : Coworking */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-three-25 border border-neutral-30 hover-border-main-three-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={400}
           >
             <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-three-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon3.png'
-                className='animate__flipInY'
-                alt=''
-              />
+              <img src='assets/images/icons/category-icon3.png' alt='' />
             </span>
             <h4 className='display-four mb-16 text-neutral-700'>
-              Data Science
+              Espace Coworking
             </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-              Courses on nutrition, fitness training, yoga...
+              Espaces modernes, collaboratifs, équipés pour associations,
+              entrepreneurs et créatifs.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-three-600 hover-bg-main-three-600 hover-text-white hover-border-main-three-600'
+              to='/coworking'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-three-600 hover-bg-main-three-600 hover-text-white'
             >
-              14 Course
+              Réserver
             </Link>
           </div>
+
+          {/* ÉLÉMENT 6 : Insertion & Formation */}
           <div
             className='category-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30 hover-border-main-two-600 transition-2'
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-              <img
-                src='assets/images/icons/category-icon2.png'
-                className='animate__flipInY'
-                alt=''
-              />
+            <span className='w-96 h-96 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24'>
+              <img src='assets/images/icons/category-icon2.png' alt='' />
             </span>
-            <h4 className='display-four mb-16 text-neutral-700'>ArtsDesign</h4>
+            <h4 className='display-four mb-16 text-neutral-700'>
+              Insertion & Formations
+            </h4>
             <p className='text-neutral-500 text-lg text-line-2'>
-              Courses on nutrition, fitness training, yoga...
+              Programmes d’insertion, stages, formations pratiques
+              et appui à l’emploi des jeunes.
             </p>
             <Link
-              to='/courses'
-              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white hover-border-main-two-600'
+              to='/formations'
+              className='py-12 px-24 bg-white rounded-8 border border-neutral-30 mt-28 fw-semibold text-main-two-600 hover-bg-main-two-600 hover-text-white'
             >
-              15 Course
+              Découvrir
             </Link>
           </div>
+
         </Slider>
+
+        {/* ARROWS */}
         <div className='flex-align gap-16 mt-40 justify-content-center'>
           <button
             type='button'
-            id='category-prev'
             onClick={() => sliderRef.current.slickPrev()}
-            className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+            className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white w-48 h-48'
           >
             <i className='ph ph-caret-left' />
           </button>
+
           <button
             type='button'
-            id='category-next'
             onClick={() => sliderRef.current.slickNext()}
-            className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+            className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white w-48 h-48'
           >
             <i className='ph ph-caret-right' />
           </button>
         </div>
+
       </div>
     </section>
   );

@@ -1,18 +1,17 @@
-const FAQInnerOne = () => {
+const FAQMaisonAssociations = () => {
   return (
     <section className='faq-page py-120'>
       <div className='container'>
         <div className='section-heading text-center'>
           <div className='flex-align d-inline-flex gap-8 mb-16'>
             <span className='text-main-600 text-2xl d-flex'>
-              <i className='ph-bold ph-book' />
+              <i className='ph-bold ph-question' />
             </span>
-            <h5 className='text-main-600 mb-0'>FAQs</h5>
+            <h5 className='text-main-600 mb-0'>Foire Aux Questions</h5>
           </div>
-          <h2 className='mb-24'>Find Answers to Your Questions</h2>
+          <h2 className='mb-24'>Trouvez Réponses à Vos Questions</h2>
           <p className=''>
-            Welcome to our FAQs section! Here, we've compiled answers to some of
-            the most common questions our users ask.
+            Bienvenue dans notre section FAQ ! Vous trouverez ici les réponses aux questions les plus fréquemment posées sur nos services et activités.
           </p>
         </div>
         <div className='text-center mb-40'>
@@ -24,63 +23,64 @@ const FAQInnerOne = () => {
             <li className='nav-item' role='presentation'>
               <button
                 className='nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8 active'
-                id='pills-onlineEdu-tab'
+                id='pills-associations-tab'
                 data-bs-toggle='pill'
-                data-bs-target='#pills-onlineEdu'
+                data-bs-target='#pills-associations'
                 type='button'
                 role='tab'
-                aria-controls='pills-onlineEdu'
+                aria-controls='pills-associations'
                 aria-selected='true'
               >
-                <i className='text-xl text-main-600 d-flex ph-bold ph-user' />
-                Online Education
+                <i className='text-xl text-main-600 d-flex ph-bold ph-users' />
+                Pour les Associations
               </button>
             </li>
             <li className='nav-item' role='presentation'>
               <button
                 className='nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8'
-                id='pills-paymentMethod-tab'
+                id='pills-entrepreneurs-tab'
                 data-bs-toggle='pill'
-                data-bs-target='#pills-paymentMethod'
+                data-bs-target='#pills-entrepreneurs'
                 type='button'
                 role='tab'
-                aria-controls='pills-paymentMethod'
+                aria-controls='pills-entrepreneurs'
                 aria-selected='false'
               >
-                <i className='text-xl text-main-600 d-flex ph-bold ph-graduation-cap' />
-                Payment Method
+                <i className='text-xl text-main-600 d-flex ph-bold ph-rocket-launch' />
+                Pour les Entrepreneurs
               </button>
             </li>
             <li className='nav-item' role='presentation'>
               <button
                 className='nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8'
-                id='pills-Pricing-tab'
+                id='pills-partenaires-tab'
                 data-bs-toggle='pill'
-                data-bs-target='#pills-Pricing'
+                data-bs-target='#pills-partenaires'
                 type='button'
                 role='tab'
-                aria-controls='pills-Pricing'
+                aria-controls='pills-partenaires'
                 aria-selected='false'
               >
-                <i className='text-xl text-main-600 d-flex ph-bold ph-star' />
-                Pricing Plan
+                <i className='text-xl text-main-600 d-flex ph-bold ph-handshake' />
+                Pour les Partenaires
               </button>
             </li>
           </ul>
         </div>
         <div className='tab-content' id='pills-tabContent'>
+          {/* ONGLET ASSOCIATIONS */}
           <div
             className='tab-pane fade show active'
-            id='pills-onlineEdu'
+            id='pills-associations'
             role='tabpanel'
-            aria-labelledby='pills-onlineEdu-tab'
+            aria-labelledby='pills-associations-tab'
             tabIndex={0}
           >
             <div className='row gy-4'>
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExampleOne'
+                  id='accordionAssociationsOne'
                 >
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
@@ -88,23 +88,21 @@ const FAQInnerOne = () => {
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOne'
+                        data-bs-target='#collapseAssocOne'
                         aria-expanded='true'
-                        aria-controls='collapseOne'
+                        aria-controls='collapseAssocOne'
                       >
-                        How do I enroll in a course?
+                        Comment devenir membre de la Maison des Associations ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOne'
+                      id='collapseAssocOne'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExampleOne'
+                      data-bs-parent='#accordionAssociationsOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Pour devenir membre, il suffit de remplir le formulaire d'adhésion disponible sur notre site ou directement à l'accueil de la MAG. Votre demande sera étudiée par notre équipe dans les plus brefs délais.
                         </p>
                       </div>
                     </div>
@@ -115,23 +113,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwo'
+                        data-bs-target='#collapseAssocTwo'
                         aria-expanded='false'
-                        aria-controls='collapseTwo'
+                        aria-controls='collapseAssocTwo'
                       >
-                        Can I access my courses on mobile devices?
+                        Quels sont les horaires d'ouverture des espaces ?
                       </button>
                     </h2>
                     <div
-                      id='collapseTwo'
+                      id='collapseAssocTwo'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOne'
+                      data-bs-parent='#accordionAssociationsOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          La Maison des Associations est ouverte du lundi au vendredi de 8h à 18h, et le samedi de 9h à 13h pour les conférences et événements spéciaux.
                         </p>
                       </div>
                     </div>
@@ -142,77 +138,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseThree'
+                        data-bs-target='#collapseAssocThree'
                         aria-expanded='false'
-                        aria-controls='collapseThree'
+                        aria-controls='collapseAssocThree'
                       >
-                        How long do I have access to a course?
+                        Comment réserver la salle multifonctionnelle ?
                       </button>
                     </h2>
                     <div
-                      id='collapseThree'
+                      id='collapseAssocThree'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOne'
+                      data-bs-parent='#accordionAssociationsOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFour'
-                        aria-expanded='false'
-                        aria-controls='collapseFour'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFour'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFive'
-                        aria-expanded='false'
-                        aria-controls='collapseFive'
-                      >
-                        Do you offer refunds if I'm not satisfied with a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFive'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          La réservation se fait via notre plateforme en ligne dans l'espace "Actualités et inscriptions" ou en contactant directement notre équipe d'accueil.
                         </p>
                       </div>
                     </div>
@@ -222,7 +162,7 @@ const FAQInnerOne = () => {
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExampleTwooo'
+                  id='accordionAssociationsTwo'
                 >
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
@@ -230,23 +170,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwoEducation'
+                        data-bs-target='#collapseAssocFour'
                         aria-expanded='false'
-                        aria-controls='collapseTwoEducation'
+                        aria-controls='collapseAssocFour'
                       >
-                        Can I access my courses on mobile devices?
+                        Comment exprimer mes besoins en formation ?
                       </button>
                     </h2>
                     <div
-                      id='collapseTwoEducation'
+                      id='collapseAssocFour'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwooo'
+                      data-bs-parent='#accordionAssociationsTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Utilisez notre formulaire en ligne "Expression des besoins" disponible sur le site. Nous analysons régulièrement ces demandes pour adapter notre programme de formations.
                         </p>
                       </div>
                     </div>
@@ -257,23 +195,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseThreeEducation'
+                        data-bs-target='#collapseAssocFive'
                         aria-expanded='false'
-                        aria-controls='collapseThreeEducation'
+                        aria-controls='collapseAssocFive'
                       >
-                        How long do I have access to a course?
+                        L'accès au coworking est-il payant ?
                       </button>
                     </h2>
                     <div
-                      id='collapseThreeEducation'
+                      id='collapseAssocFive'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwooo'
+                      data-bs-parent='#accordionAssociationsTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          L'accès à l'espace de coworking est gratuit pour les associations membres de la MAG. Des formules d'abonnement sont disponibles pour les non-membres.
                         </p>
                       </div>
                     </div>
@@ -284,77 +220,21 @@ const FAQInnerOne = () => {
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOneEducation'
+                        data-bs-target='#collapseAssocSix'
                         aria-expanded='true'
-                        aria-controls='collapseOneEducation'
+                        aria-controls='collapseAssocSix'
                       >
-                        How do I enroll in a course?
+                        Comment participer aux Conférences du Samedi ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOneEducation'
+                      id='collapseAssocSix'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExampleTwooo'
+                      data-bs-parent='#accordionAssociationsTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFourEducation'
-                        aria-expanded='false'
-                        aria-controls='collapseFourEducation'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFourEducation'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwooo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFiveEducation'
-                        aria-expanded='false'
-                        aria-controls='collapseFiveEducation'
-                      >
-                        Do you offer refunds if I'm not satisfied with a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFiveEducation'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwooo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          L'inscription se fait en ligne via notre plateforme. Les conférences sont ouvertes à tous et généralement gratuites pour les membres.
                         </p>
                       </div>
                     </div>
@@ -363,18 +243,20 @@ const FAQInnerOne = () => {
               </div>
             </div>
           </div>
+
+          {/* ONGLET ENTREPRENEURS */}
           <div
             className='tab-pane fade'
-            id='pills-paymentMethod'
+            id='pills-entrepreneurs'
             role='tabpanel'
-            aria-labelledby='pills-paymentMethod-tab'
+            aria-labelledby='pills-entrepreneurs-tab'
             tabIndex={0}
           >
             <div className='row gy-4'>
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExamplePaymentOne'
+                  id='accordionEntrepreneursOne'
                 >
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
@@ -382,23 +264,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwoPaymentOne'
+                        data-bs-target='#collapseEntrepOne'
                         aria-expanded='false'
-                        aria-controls='collapseTwoPaymentOne'
+                        aria-controls='collapseEntrepOne'
                       >
-                        Can I access my courses on mobile devices?
+                        Comment intégrer l'incubateur Tech & Art ?
                       </button>
                     </h2>
                     <div
-                      id='collapseTwoPaymentOne'
+                      id='collapseEntrepOne'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExamplePaymentOne'
+                      data-bs-parent='#accordionEntrepreneursOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Postulez via notre appel à projets en ligne. Les sélections se font sur dossier et pitch devant un comité d'experts plusieurs fois par an.
                         </p>
                       </div>
                     </div>
@@ -409,77 +289,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseThreePaymentOne'
+                        data-bs-target='#collapseEntrepTwo'
                         aria-expanded='false'
-                        aria-controls='collapseThreePaymentOne'
+                        aria-controls='collapseEntrepTwo'
                       >
-                        How long do I have access to a course?
+                        Quels types de projets sont éligibles ?
                       </button>
                     </h2>
                     <div
-                      id='collapseThreePaymentOne'
+                      id='collapseEntrepTwo'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExamplePaymentOne'
+                      data-bs-parent='#accordionEntrepreneursOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFourPaymentOne'
-                        aria-expanded='false'
-                        aria-controls='collapseFourPaymentOne'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFourPaymentOne'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExamplePaymentOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFivePaymentOne'
-                        aria-expanded='false'
-                        aria-controls='collapseFivePaymentOne'
-                      >
-                        Do you offer refunds if I'm not satisfied with a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFivePaymentOne'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExamplePaymentOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Nous accompagnons les projets innovants dans les domaines du numérique, des arts, de l'économie sociale et solidaire, et du développement durable.
                         </p>
                       </div>
                     </div>
@@ -490,23 +314,21 @@ const FAQInnerOne = () => {
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOnePaymentOne'
+                        data-bs-target='#collapseEntrepThree'
                         aria-expanded='true'
-                        aria-controls='collapseOnePaymentOne'
+                        aria-controls='collapseEntrepThree'
                       >
-                        How do I enroll in a course?
+                        Quelle est la durée d'incubation ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOnePaymentOne'
+                      id='collapseEntrepThree'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExamplePaymentOne'
+                      data-bs-parent='#accordionEntrepreneursOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Le programme d'incubation dure généralement 6 à 12 mois, avec un suivi personnalisé adapté au rythme de développement de chaque projet.
                         </p>
                       </div>
                     </div>
@@ -516,7 +338,7 @@ const FAQInnerOne = () => {
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExampleTwoPaymentTwo'
+                  id='accordionEntrepreneursTwo'
                 >
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
@@ -524,23 +346,21 @@ const FAQInnerOne = () => {
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOnePaymentTwo'
+                        data-bs-target='#collapseEntrepFour'
                         aria-expanded='true'
-                        aria-controls='collapseOnePaymentTwo'
+                        aria-controls='collapseEntrepFour'
                       >
-                        How do I enroll in a course?
+                        Quels services propose l'incubateur ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOnePaymentTwo'
+                      id='collapseEntrepFour'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExampleTwoPaymentTwo'
+                      data-bs-parent='#accordionEntrepreneursTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Mentorat expert, accès aux espaces de travail, formations thématiques, mise en réseau avec des partenaires, et accompagnement au financement.
                         </p>
                       </div>
                     </div>
@@ -551,23 +371,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwoPaymentTwo'
+                        data-bs-target='#collapseEntrepFive'
                         aria-expanded='false'
-                        aria-controls='collapseTwoPaymentTwo'
+                        aria-controls='collapseEntrepFive'
                       >
-                        Can I access my courses on mobile devices?
+                        L'incubateur est-il payant ?
                       </button>
                     </h2>
                     <div
-                      id='collapseTwoPaymentTwo'
+                      id='collapseEntrepFive'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwoPaymentTwo'
+                      data-bs-parent='#accordionEntrepreneursTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          L'accompagnement est gratuit pour les projets sélectionnés. Nous fonctionnons sur le principe de l'équity-free pour préserver l'indépendance des porteurs.
                         </p>
                       </div>
                     </div>
@@ -578,77 +396,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseThreePaymentTwo'
+                        data-bs-target='#collapseEntrepSix'
                         aria-expanded='false'
-                        aria-controls='collapseThreePaymentTwo'
+                        aria-controls='collapseEntrepSix'
                       >
-                        How long do I have access to a course?
+                        Y a-t-il un accompagnement après l'incubation ?
                       </button>
                     </h2>
                     <div
-                      id='collapseThreePaymentTwo'
+                      id='collapseEntrepSix'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwoPaymentTwo'
+                      data-bs-parent='#accordionEntrepreneursTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFourPaymentTwo'
-                        aria-expanded='false'
-                        aria-controls='collapseFourPaymentTwo'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFourPaymentTwo'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwoPaymentTwo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFivePaymentTwo'
-                        aria-expanded='false'
-                        aria-controls='collapseFivePaymentTwo'
-                      >
-                        Do you offer refunds if I'm not satisfied with a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFivePaymentTwo'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwoPaymentTwo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Oui, nous proposons un programme de post-incubation avec un suivi allégé et un accès privilégié à notre réseau de partenaires et investisseurs.
                         </p>
                       </div>
                     </div>
@@ -657,18 +419,20 @@ const FAQInnerOne = () => {
               </div>
             </div>
           </div>
+
+          {/* ONGLET PARTENAIRES */}
           <div
             className='tab-pane fade'
-            id='pills-Pricing'
+            id='pills-partenaires'
             role='tabpanel'
-            aria-labelledby='pills-Pricing-tab'
+            aria-labelledby='pills-partenaires-tab'
             tabIndex={0}
           >
             <div className='row gy-4'>
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExampleOnePricingOne'
+                  id='accordionPartenairesOne'
                 >
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
@@ -676,23 +440,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwoPricingOne'
+                        data-bs-target='#collapsePartOne'
                         aria-expanded='false'
-                        aria-controls='collapseTwoPricingOne'
+                        aria-controls='collapsePartOne'
                       >
-                        Can I access my courses on mobile devices?
+                        Quels types de partenariats recherchez-vous ?
                       </button>
                     </h2>
                     <div
-                      id='collapseTwoPricingOne'
+                      id='collapsePartOne'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOnePricingOne'
+                      data-bs-parent='#accordionPartenairesOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Nous cherchons des partenaires techniques, financiers et institutionnels pour nos programmes d'accompagnement, nos événements et le développement de nos infrastructures.
                         </p>
                       </div>
                     </div>
@@ -703,23 +465,21 @@ const FAQInnerOne = () => {
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOnePricingOne'
+                        data-bs-target='#collapsePartTwo'
                         aria-expanded='true'
-                        aria-controls='collapseOnePricingOne'
+                        aria-controls='collapsePartTwo'
                       >
-                        How do I enroll in a course?
+                        Comment proposer un partenariat ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOnePricingOne'
+                      id='collapsePartTwo'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExampleOnePricingOne'
+                      data-bs-parent='#accordionPartenairesOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Contactez-nous via le formulaire dédié "Devenir partenaire" ou par email. Notre équipe vous recontactera pour une première rencontre.
                         </p>
                       </div>
                     </div>
@@ -730,77 +490,21 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseThreePricingOne'
+                        data-bs-target='#collapsePartThree'
                         aria-expanded='false'
-                        aria-controls='collapseThreePricingOne'
+                        aria-controls='collapsePartThree'
                       >
-                        How long do I have access to a course?
+                        Peut-on co-organiser des événements ?
                       </button>
                     </h2>
                     <div
-                      id='collapseThreePricingOne'
+                      id='collapsePartThree'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOnePricingOne'
+                      data-bs-parent='#accordionPartenairesOne'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFourPricingOne'
-                        aria-expanded='false'
-                        aria-controls='collapseFourPricingOne'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFourPricingOne'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOnePricingOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFivePricingOne'
-                        aria-expanded='false'
-                        aria-controls='collapseFivePricingOne'
-                      >
-                        Do you offer refunds if I'm not satisfied with a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFivePricingOne'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleOnePricingOne'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Absolument ! Nous sommes ouverts à la co-organisation d'événements, conférences et ateliers qui s'inscrivent dans notre mission de développement local.
                         </p>
                       </div>
                     </div>
@@ -810,112 +514,29 @@ const FAQInnerOne = () => {
               <div className='col-lg-6'>
                 <div
                   className='accordion common-accordion'
-                  id='accordionExampleTwo'
+                  id='accordionPartenairesTwo'
                 >
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseTwoEducationPricingTwo'
-                        aria-expanded='false'
-                        aria-controls='collapseTwoEducationPricingTwo'
-                      >
-                        Can I access my courses on mobile devices?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseTwoEducationPricingTwo'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseThreePricingTwo'
-                        aria-expanded='false'
-                        aria-controls='collapseThreePricingTwo'
-                      >
-                        How long do I have access to a course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseThreePricingTwo'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button collapsed'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#collapseFourPricingTwo'
-                        aria-expanded='false'
-                        aria-controls='collapseFourPricingTwo'
-                      >
-                        What if I need help or have questions during the course?
-                      </button>
-                    </h2>
-                    <div
-                      id='collapseFourPricingTwo'
-                      className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwo'
-                    >
-                      <div className='accordion-body'>
-                        <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                   <div className='accordion-item'>
                     <h2 className='accordion-header'>
                       <button
                         className='accordion-button'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseOnePricingTwo'
+                        data-bs-target='#collapsePartFour'
                         aria-expanded='true'
-                        aria-controls='collapseOnePricingTwo'
+                        aria-controls='collapsePartFour'
                       >
-                        How do I enroll in a course?
+                        Quels sont les avantages pour les partenaires ?
                       </button>
                     </h2>
                     <div
-                      id='collapseOnePricingTwo'
+                      id='collapsePartFour'
                       className='accordion-collapse collapse show'
-                      data-bs-parent='#accordionExampleTwo'
+                      data-bs-parent='#accordionPartenairesTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Visibilité sur nos supports de communication, accès à notre réseau d'acteurs locaux, participation à nos instances de gouvernance, et impact social mesurable.
                         </p>
                       </div>
                     </div>
@@ -926,23 +547,46 @@ const FAQInnerOne = () => {
                         className='accordion-button collapsed'
                         type='button'
                         data-bs-toggle='collapse'
-                        data-bs-target='#collapseFivePricingTwo'
+                        data-bs-target='#collapsePartFive'
                         aria-expanded='false'
-                        aria-controls='collapseFivePricingTwo'
+                        aria-controls='collapsePartFive'
                       >
-                        Do you offer refunds if I'm not satisfied with a course?
+                        Acceptez-vous les dons de matériel ?
                       </button>
                     </h2>
                     <div
-                      id='collapseFivePricingTwo'
+                      id='collapsePartFive'
                       className='accordion-collapse collapse'
-                      data-bs-parent='#accordionExampleTwo'
+                      data-bs-parent='#accordionPartenairesTwo'
                     >
                       <div className='accordion-body'>
                         <p className='accordion-body__desc'>
-                          Once you enroll in a course, you'll have unlimited
-                          access to the course materials for as long as the
-                          course is available on our platform.
+                          Oui, nous acceptons les dons de matériel informatique, de mobilier et d'équipements pour améliorer nos espaces et services aux associations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='accordion-item'>
+                    <h2 className='accordion-header'>
+                      <button
+                        className='accordion-button collapsed'
+                        type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#collapsePartSix'
+                        aria-expanded='false'
+                        aria-controls='collapsePartSix'
+                      >
+                        Proposez-vous du mécénat de compétence ?
+                      </button>
+                    </h2>
+                    <div
+                      id='collapsePartSix'
+                      className='accordion-collapse collapse'
+                      data-bs-parent='#accordionPartenairesTwo'
+                    >
+                      <div className='accordion-body'>
+                        <p className='accordion-body__desc'>
+                          Tout à fait ! Le mécénat de compétence est l'une des formes de partenariat que nous valorisons particulièrement pour l'expertise qu'il apporte à nos bénéficiaires.
                         </p>
                       </div>
                     </div>
@@ -957,4 +601,4 @@ const FAQInnerOne = () => {
   );
 };
 
-export default FAQInnerOne;
+export default FAQMaisonAssociations;

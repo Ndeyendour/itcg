@@ -113,7 +113,7 @@ const Sidebar = () => (
           <div className="overflow-x-auto">
             <div className="scrollbar min-w-max">
               <span className="text-neutral-500 fw-normal text-14 mb-8">
-                Welcome Henry,
+                Bienvenu Ndeye,
               </span>
               <ul>
                 {[
@@ -143,7 +143,7 @@ const Sidebar = () => (
                     href: 'dashbord-wishlist.html',
                   },
                   {
-                    label: 'Reviews',
+                    label: 'Users',
                     icon: 'ph ph-sparkle',
                     href: 'deshbord-reviews.html',
                   },

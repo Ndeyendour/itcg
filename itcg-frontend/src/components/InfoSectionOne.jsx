@@ -3,6 +3,7 @@ const InfoSectionOne = () => {
     <section className='info py-40 bg-main-600'>
       <div className='container'>
         <div className='row gy-4'>
+          {/* Innovation locale */}
           <div
             className='col-xl-3 col-sm-6'
             data-aos='fade-up'
@@ -17,12 +18,13 @@ const InfoSectionOne = () => {
                   Innovation locale
                 </h5>
                 <span className='text-sm text-white'>
-                  Valoriser la technologie, l’art et la culture de Guédiawaye
+                  Promouvoir la technologie, l’art et la culture à Guédiawaye, pour un développement local durable.
                 </span>
               </div>
             </div>
           </div>
 
+          {/* Accompagnement expert */}
           <div
             className='col-xl-3 col-sm-6'
             data-aos='fade-up'
@@ -37,12 +39,13 @@ const InfoSectionOne = () => {
                   Accompagnement expert
                 </h5>
                 <span className='text-sm text-white'>
-                  Mentors, formateurs et experts à votre service
+                  Accédez à des mentors, formateurs et experts pour guider vos projets entrepreneuriaux et culturels.
                 </span>
               </div>
             </div>
           </div>
 
+          {/* Insertion durable */}
           <div
             className='col-xl-3 col-sm-6'
             data-aos='fade-up'
@@ -53,14 +56,17 @@ const InfoSectionOne = () => {
                 <i className='animate__heartBeat ph-bold ph-briefcase' />
               </span>
               <div className='flex-grow-1'>
-                <h5 className='mb-8 text-white fw-medium'>Insertion durable</h5>
+                <h5 className='mb-8 text-white fw-medium'>
+                  Insertion durable
+                </h5>
                 <span className='text-sm text-white'>
-                  Des programmes concrets pour l’emploi des jeunes
+                  Des programmes concrets pour favoriser l'emploi des jeunes et leur insertion professionnelle à Guédiawaye.
                 </span>
               </div>
             </div>
           </div>
 
+          {/* Certification reconnue */}
           <div
             className='col-xl-3 col-sm-6'
             data-aos='fade-up'
@@ -75,7 +81,7 @@ const InfoSectionOne = () => {
                   Certification reconnue
                 </h5>
                 <span className='text-sm text-white'>
-                  Formations certifiantes avec des partenaires de renom
+                  Des formations certifiantes reconnues, dispensées en partenariat avec des institutions de renom.
                 </span>
               </div>
             </div>

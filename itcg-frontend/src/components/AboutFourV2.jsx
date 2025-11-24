@@ -33,17 +33,17 @@ const AboutFourV2 = () => {
                 />
                 <div className='offer-message animation-item style-two px-24 py-12 inset-inline-end--64 rounded-6 border border-white bg-success-600 fw-medium flex-align d-inline-flex gap-16 box-shadow-lg animation-upDown'>
                   <span className='flex-shrink-0 w-48 h-48 bg-white text-success-600 text-2xl flex-center rounded-circle'>
-                    <i className='animate__heartBeat ph-bold ph-certificate' />
+                    <i className='animate__heartBeat ph-bold ph-users' />
                   </span>
                   <div>
                     <div ref={ref}>
                       {inView && (
                         <h1 className='text-white mb-1 text-2xl counter'>
-                          <CountUp end={12} />K
+                          <CountUp end={150} />+
                         </h1>
                       )}
                     </div>
-                    <span className='text-white'>Startups reconnues</span>
+                    <span className='text-white'>Associations accompagnées</span>
                   </div>
                 </div>
                 <div
@@ -76,29 +76,65 @@ const AboutFourV2 = () => {
                 <div className='mb-40'>
                   <div className='flex-align d-inline-flex gap-8 mb-16 wow bounceInDown'>
                     <span className='text-main-600 text-2xl d-flex'>
-                      <i className='ph-bold ph-book' />
+                      <i className='ph-bold ph-buildings' />
                     </span>
                     <h5 className='text-main-600 mb-0'>
-                      Reconnaissance officielle par le itcg
+                      Centre d'innovation communautaire
                     </h5>
                   </div>
                   <h2 className='mb-24 wow bounceInRight'>
-                    Reconnaissance itcg pour Startups
+                    La Maison des Associations de Guédiawaye
                   </h2>
                   <p className='text-neutral-500 text-line-2 wow bounceInUp'>
-                    Dans le cadre de l'initiative <strong>itcg</strong>, les entreprises innovantes peuvent obtenir une reconnaissance officielle du <strong>itcg</strong> (Department for Promotion of Industry and Internal Trade). Cette reconnaissance donne accès à de nombreux avantages : exonérations fiscales, conformité réglementaire allégée, procédures simplifiées pour les dépôts de propriété intellectuelle (DPI), et opportunités de financement.
+                    La <strong>Maison des Associations de Guédiawaye (MAG)</strong> est un espace collaboratif dédié au développement du tissu associatif et entrepreneurial local. Nous offrons un cadre professionnel et des ressources adaptées pour accompagner la croissance des initiatives citoyennes.
                   </p>
                   <p className='text-neutral-500 text-line-2 wow bounceInUp'>
-                    L’objectif est d’encourager l’entrepreneuriat en Inde et de faciliter la croissance rapide des startups à fort potentiel. En obtenant cette reconnaissance, vous gagnez en crédibilité et en visibilité auprès d’investisseurs, partenaires et clients.
+                    Notre mission est de <strong>soutenir, accompagner et valoriser</strong> les associations, entrepreneurs et porteurs de projets du territoire. À travers nos programmes d'incubation, formations et espaces de travail partagés, nous favorisons l'émergence de solutions innovantes pour le développement économique et social de Guédiawaye.
                   </p>
+                </div>
+                <div className='row gy-4 mt-40'>
+                  <div className='col-sm-6'>
+                    <div className='flex-align gap-16'>
+                      <span className='w-60 h-60 bg-main-50 text-main-600 text-2xl flex-center rounded-circle flex-shrink-0'>
+                        <i className='ph-bold ph-rocket-launch' />
+                      </span>
+                      <div>
+                        <div ref={ref}>
+                          {inView && (
+                            <h3 className='mb-1 text-2xl counter'>
+                              <CountUp end={45} />+
+                            </h3>
+                          )}
+                        </div>
+                        <span className='text-neutral-500'>Startups incubées</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-sm-6'>
+                    <div className='flex-align gap-16'>
+                      <span className='w-60 h-60 bg-main-50 text-main-600 text-2xl flex-center rounded-circle flex-shrink-0'>
+                        <i className='ph-bold ph-graduation-cap' />
+                      </span>
+                      <div>
+                        <div ref={ref}>
+                          {inView && (
+                            <h3 className='mb-1 text-2xl counter'>
+                              <CountUp end={300} />+
+                            </h3>
+                          )}
+                        </div>
+                        <span className='text-neutral-500'>Personnes formées</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className='pt-40 border-top border-neutral-50 mt-40 border-dashed border-0'>
                   <Link
-                    to='/reconnaissance-itcg'
+                    to='/a-propos'
                     className='btn btn-main rounded-pill flex-align d-inline-flex gap-8'
                   >
-                    <i className='ph-bold ph-magnifying-glass d-flex text-lg' />
-                    En savoir plus
+                    <i className='ph-bold ph-info d-flex text-lg' />
+                    Découvrir nos activités
                   </Link>
                 </div>
               </div>

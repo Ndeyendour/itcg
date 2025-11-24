@@ -29,20 +29,20 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link to='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img1.png'
-                    alt='Course'
+                    src='assets/images/thumbs/maison-association-1.png'
+                    alt='Evenement Associatif'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
                 </Link>
                 <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
+                  <h3 className='mb-0 text-white fw-medium'>15</h3>
+                  NOV
                 </div>
               </div>
               <div className='pt-32 pb-24 px-16 position-relative'>
                 <h4 className='mb-28'>
                   <Link to='/blog-details' className='link text-line-2'>
-                    Navigating the Job Market: Advice for Graduates
+                    Ateliers pour les bénévoles : Renforcer l'engagement associatif
                   </Link>
                 </h4>
                 <div className='flex-align gap-14 flex-wrap my-20'>
@@ -50,21 +50,21 @@ const BlogGridInner = () => {
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-user-circle' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph-bold ph-eye' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
+                    <span className='text-neutral-500 text-lg'>450 Views</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-chat-dots' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
+                    <span className='text-neutral-500 text-lg'>12 Comments</span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
@@ -73,32 +73,35 @@ const BlogGridInner = () => {
                     className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                     tabIndex={0}
                   >
-                    Read More
+                    Lire la suite
                     <i className='ph ph-arrow-right' />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+          
+          {/* Ajout d'autres éléments similaires */}
+          
           <div className='col-lg-4 col-sm-6'>
             <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link to='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img2.png'
-                    alt='Course'
+                    src='assets/images/thumbs/maison-association-2.png'
+                    alt='Evenement Associatif'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
                 </Link>
                 <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
+                  <h3 className='mb-0 text-white fw-medium'>20</h3>
+                  NOV
                 </div>
               </div>
               <div className='pt-32 pb-24 px-16 position-relative'>
                 <h4 className='mb-28'>
                   <Link to='/blog-details' className='link text-line-2'>
-                    The Importance of Diversity in Higher Education
+                    Les nouvelles initiatives solidaires dans notre région
                   </Link>
                 </h4>
                 <div className='flex-align gap-14 flex-wrap my-20'>
@@ -106,21 +109,21 @@ const BlogGridInner = () => {
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-user-circle' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph-bold ph-eye' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
+                    <span className='text-neutral-500 text-lg'>300 Views</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-chat-dots' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
+                    <span className='text-neutral-500 text-lg'>15 Comments</span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
@@ -129,32 +132,90 @@ const BlogGridInner = () => {
                     className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                     tabIndex={0}
                   >
-                    Read More
+                    Lire la suite
                     <i className='ph ph-arrow-right' />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+          
+                   <div className='col-lg-4 col-sm-6'>
+            <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
+              <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
+                <Link to='/blog-details' className='w-100 h-100'>
+                  <img
+                    src='assets/images/thumbs/maison-association-3.png'
+                    alt='Initiative solidaire'
+                    className='scale-hover-item__img rounded-12 cover-img transition-2'
+                  />
+                </Link>
+                <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
+                  <h3 className='mb-0 text-white fw-medium'>05</h3>
+                  NOV
+                </div>
+              </div>
+              <div className='pt-32 pb-24 px-16 position-relative'>
+                <h4 className='mb-28'>
+                  <Link to='/blog-details' className='link text-line-2'>
+                    Soutien aux familles : Projets de solidarité locale
+                  </Link>
+                </h4>
+                <div className='flex-align gap-14 flex-wrap my-20'>
+                  <div className='flex-align gap-8'>
+                    <span className='text-neutral-500 text-2xl d-flex'>
+                      <i className='ph ph-user-circle' />
+                    </span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
+                  </div>
+                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
+                  <div className='flex-align gap-8'>
+                    <span className='text-neutral-500 text-2xl d-flex'>
+                      <i className='ph-bold ph-eye' />
+                    </span>
+                    <span className='text-neutral-500 text-lg'>850 Views</span>
+                  </div>
+                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
+                  <div className='flex-align gap-8'>
+                    <span className='text-neutral-500 text-2xl d-flex'>
+                      <i className='ph ph-chat-dots' />
+                    </span>
+                    <span className='text-neutral-500 text-lg'>30 Comments</span>
+                  </div>
+                </div>
+                <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
+                  <Link
+                    to='/blog-details'
+                    className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
+                    tabIndex={0}
+                  >
+                    Lire la suite
+                    <i className='ph ph-arrow-right' />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className='col-lg-4 col-sm-6'>
             <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link to='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img3.png'
-                    alt='Course'
+                    src='assets/images/thumbs/maison-association-4.png'
+                    alt='Soutien aux bénévoles'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
                 </Link>
                 <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
+                  <h3 className='mb-0 text-white fw-medium'>10</h3>
+                  NOV
                 </div>
               </div>
               <div className='pt-32 pb-24 px-16 position-relative'>
                 <h4 className='mb-28'>
                   <Link to='/blog-details' className='link text-line-2'>
-                    10 Tips for Successful Online Learning
+                    Comment soutenir les bénévoles de votre association ?
                   </Link>
                 </h4>
                 <div className='flex-align gap-14 flex-wrap my-20'>
@@ -162,21 +223,21 @@ const BlogGridInner = () => {
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-user-circle' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph-bold ph-eye' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
+                    <span className='text-neutral-500 text-lg'>560 Views</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-chat-dots' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
+                    <span className='text-neutral-500 text-lg'>22 Comments</span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
@@ -185,32 +246,33 @@ const BlogGridInner = () => {
                     className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                     tabIndex={0}
                   >
-                    Read More
+                    Lire la suite
                     <i className='ph ph-arrow-right' />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+
           <div className='col-lg-4 col-sm-6'>
             <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link to='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img4.png'
-                    alt='Course'
+                    src='assets/images/thumbs/maison-association-5.png'
+                    alt='Jeune public et culture'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
                 </Link>
                 <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
+                  <h3 className='mb-0 text-white fw-medium'>03</h3>
+                  NOV
                 </div>
               </div>
               <div className='pt-32 pb-24 px-16 position-relative'>
                 <h4 className='mb-28'>
                   <Link to='/blog-details' className='link text-line-2'>
-                    How to Stay Motivated While Studying from Home
+                    L'impact de la culture sur les jeunes : Programme 2024
                   </Link>
                 </h4>
                 <div className='flex-align gap-14 flex-wrap my-20'>
@@ -218,21 +280,21 @@ const BlogGridInner = () => {
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-user-circle' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph-bold ph-eye' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
+                    <span className='text-neutral-500 text-lg'>720 Views</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-chat-dots' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
+                    <span className='text-neutral-500 text-lg'>18 Comments</span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
@@ -241,32 +303,33 @@ const BlogGridInner = () => {
                     className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                     tabIndex={0}
                   >
-                    Read More
+                    Lire la suite
                     <i className='ph ph-arrow-right' />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+
           <div className='col-lg-4 col-sm-6'>
             <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link to='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img5.png'
-                    alt='Course'
+                    src='assets/images/thumbs/maison-association-6.png'
+                    alt='Formations gratuites'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
                 </Link>
                 <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
+                  <h3 className='mb-0 text-white fw-medium'>19</h3>
+                  NOV
                 </div>
               </div>
               <div className='pt-32 pb-24 px-16 position-relative'>
                 <h4 className='mb-28'>
                   <Link to='/blog-details' className='link text-line-2'>
-                    Mastering Python: Beginner to Advanced Tips
+                    Formations gratuites pour les associations : Comment en bénéficier ?
                   </Link>
                 </h4>
                 <div className='flex-align gap-14 flex-wrap my-20'>
@@ -274,21 +337,21 @@ const BlogGridInner = () => {
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-user-circle' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
+                    <span className='text-neutral-500 text-lg'>Par Maison des Associations</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph-bold ph-eye' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
+                    <span className='text-neutral-500 text-lg'>890 Views</span>
                   </div>
                   <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-500 text-2xl d-flex'>
                       <i className='ph ph-chat-dots' />
                     </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
+                    <span className='text-neutral-500 text-lg'>12 Comments</span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
@@ -297,238 +360,18 @@ const BlogGridInner = () => {
                     className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                     tabIndex={0}
                   >
-                    Read More
+                    Lire la suite
                     <i className='ph ph-arrow-right' />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-sm-6'>
-            <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
-              <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
-                <Link to='/blog-details' className='w-100 h-100'>
-                  <img
-                    src='assets/images/thumbs/blog-two-img6.png'
-                    alt='Course'
-                    className='scale-hover-item__img rounded-12 cover-img transition-2'
-                  />
-                </Link>
-                <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
-                </div>
-              </div>
-              <div className='pt-32 pb-24 px-16 position-relative'>
-                <h4 className='mb-28'>
-                  <Link to='/blog-details' className='link text-line-2'>
-                    Balancing Work and Study: Strategies for Success
-                  </Link>
-                </h4>
-                <div className='flex-align gap-14 flex-wrap my-20'>
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-user-circle' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph-bold ph-eye' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-chat-dots' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
-                  </div>
-                </div>
-                <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
-                  <Link
-                    to='/blog-details'
-                    className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                    tabIndex={0}
-                  >
-                    Read More
-                    <i className='ph ph-arrow-right' />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-4 col-sm-6'>
-            <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
-              <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
-                <Link to='/blog-details' className='w-100 h-100'>
-                  <img
-                    src='assets/images/thumbs/blog-two-img7.png'
-                    alt='Course'
-                    className='scale-hover-item__img rounded-12 cover-img transition-2'
-                  />
-                </Link>
-                <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
-                </div>
-              </div>
-              <div className='pt-32 pb-24 px-16 position-relative'>
-                <h4 className='mb-28'>
-                  <Link to='/blog-details' className='link text-line-2'>
-                    The Importance of Lifelong Learning in Today's World
-                  </Link>
-                </h4>
-                <div className='flex-align gap-14 flex-wrap my-20'>
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-user-circle' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph-bold ph-eye' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-chat-dots' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
-                  </div>
-                </div>
-                <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
-                  <Link
-                    to='/blog-details'
-                    className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                    tabIndex={0}
-                  >
-                    Read More
-                    <i className='ph ph-arrow-right' />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-4 col-sm-6'>
-            <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
-              <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
-                <Link to='/blog-details' className='w-100 h-100'>
-                  <img
-                    src='assets/images/thumbs/blog-two-img8.png'
-                    alt='Course'
-                    className='scale-hover-item__img rounded-12 cover-img transition-2'
-                  />
-                </Link>
-                <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
-                </div>
-              </div>
-              <div className='pt-32 pb-24 px-16 position-relative'>
-                <h4 className='mb-28'>
-                  <Link to='/blog-details' className='link text-line-2'>
-                    Effective Time Management for Students
-                  </Link>
-                </h4>
-                <div className='flex-align gap-14 flex-wrap my-20'>
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-user-circle' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph-bold ph-eye' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-chat-dots' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
-                  </div>
-                </div>
-                <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
-                  <Link
-                    to='/blog-details'
-                    className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                    tabIndex={0}
-                  >
-                    Read More
-                    <i className='ph ph-arrow-right' />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-4 col-sm-6'>
-            <div className='scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30'>
-              <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
-                <Link to='/blog-details' className='w-100 h-100'>
-                  <img
-                    src='assets/images/thumbs/blog-two-img9.png'
-                    alt='Course'
-                    className='scale-hover-item__img rounded-12 cover-img transition-2'
-                  />
-                </Link>
-                <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                  <h3 className='mb-0 text-white fw-medium'>21</h3>
-                  DEC
-                </div>
-              </div>
-              <div className='pt-32 pb-24 px-16 position-relative'>
-                <h4 className='mb-28'>
-                  <Link to='/blog-details' className='link text-line-2'>
-                    The Benefits of Learning a New Language Online
-                  </Link>
-                </h4>
-                <div className='flex-align gap-14 flex-wrap my-20'>
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-user-circle' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>By Admin</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph-bold ph-eye' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>1.6k</span>
-                  </div>
-                  <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                  <div className='flex-align gap-8'>
-                    <span className='text-neutral-500 text-2xl d-flex'>
-                      <i className='ph ph-chat-dots' />
-                    </span>
-                    <span className='text-neutral-500 text-lg'>24</span>
-                  </div>
-                </div>
-                <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
-                  <Link
-                    to='/blog-details'
-                    className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                    tabIndex={0}
-                  >
-                    Read More
-                    <i className='ph ph-arrow-right' />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
         </div>
+
+        {/* Pagination */}
         <ul className='pagination mt-40 flex-align gap-12 flex-wrap justify-content-center'>
           <li className='page-item'>
             <Link

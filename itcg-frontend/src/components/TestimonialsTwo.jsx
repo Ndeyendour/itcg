@@ -30,23 +30,23 @@ const TestimonialsTwo = () => {
         <div className='section-heading text-center'>
           <div className='flex-align d-inline-flex gap-8 mb-16 wow bounceInDown'>
             <span className='text-main-600 text-2xl d-flex'>
-              <i className='ph-bold ph-book' />
+              <i className='ph-bold ph-users' />
             </span>
             <h5 className='text-main-600 mb-0'>
               Témoignages de nos jeunes talents
             </h5>
           </div>
           <h2 className='mb-24 wow bounceIn'>
-            Ce que disent les apprenant·e·s de l’ITCG
+            Ce que disent les apprenant·e·s de la Maison des Associations
           </h2>
-          <p className=' wow bounceInUp'>
-            Grâce à l’ITCG, de nombreux jeunes découvrent, apprennent et se
-            projettent dans des carrières culturelles ou numériques prometteuses.
+          <p className='wow bounceInUp'>
+            Grâce à la Maison des Associations, de nombreux jeunes de Guédiawaye
+            ont découvert des opportunités dans les domaines numériques, culturels
+            et artistiques.
           </p>
         </div>
 
         <Slider ref={sliderRef} {...settings} className='testimonials-two-slider'>
-
           {/* Témoignage 1 */}
           <div className='testimonials-two-item bg-main-25 rounded-12 p-32' data-aos='fade-up' data-aos-duration={400}>
             <ul className='flex-align gap-8 mb-16'>
@@ -57,19 +57,20 @@ const TestimonialsTwo = () => {
               ))}
             </ul>
             <p className='text-neutral-700 text-xl'>
-              « Avant l’ITCG, je n’avais jamais touché à un ordinateur. Aujourd’hui,
-              je crée des affiches pour les événements culturels de mon quartier. »
+              « Avant de rejoindre la Maison des Associations, je n'avais aucune
+              expérience dans le domaine numérique. Aujourd'hui, je crée des sites
+              web et je travaille avec des clients de la communauté. »
             </p>
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 border-dashed border-0'>
-              <div className='flex-align gap-24 '>
+              <div className='flex-align gap-24'>
                 <img
                   src='assets/images/thumbs/testi-img1.png'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />
                 <div>
-                  <h5 className='mb-8 fw-medium'>Fatou N.</h5>
-                  <span className='text-neutral-700'>Graphiste junior</span>
+                  <h5 className='mb-8 fw-medium'>Mamadou D.</h5>
+                  <span className='text-neutral-700'>Développeur web</span>
                 </div>
               </div>
               <span className='quate text-48 d-flex opacity-25'>
@@ -91,19 +92,20 @@ const TestimonialsTwo = () => {
               </li>
             </ul>
             <p className='text-neutral-700 text-xl'>
-              « Les formations à l’ITCG m’ont permis de découvrir le montage
-              vidéo. J’ai même lancé ma première chaîne YouTube culturelle ! »
+              « Les ateliers artistiques de la Maison des Associations m'ont permis
+              de perfectionner mes compétences en design graphique. Aujourd'hui, je
+              travaille avec plusieurs artistes locaux. »
             </p>
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 border-dashed border-0'>
-              <div className='flex-align gap-24 '>
+              <div className='flex-align gap-24'>
                 <img
                   src='assets/images/thumbs/testi-img2.png'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />
                 <div>
-                  <h5 className='mb-8 fw-medium'>Moussa D.</h5>
-                  <span className='text-neutral-700'>Monteur vidéo</span>
+                  <h5 className='mb-8 fw-medium'>Aissatou K.</h5>
+                  <span className='text-neutral-700'>Designer graphique</span>
                 </div>
               </div>
               <span className='quate text-48 d-flex opacity-25'>
@@ -122,19 +124,19 @@ const TestimonialsTwo = () => {
               ))}
             </ul>
             <p className='text-neutral-700 text-xl'>
-              « Grâce à l’ITCG, j’ai découvert l’entrepreneuriat culturel. Aujourd’hui, je
-              développe un projet pour valoriser les artistes de Guédiawaye. »
+              « Grâce à la Maison des Associations, j'ai appris à gérer mon propre
+              projet culturel et j'ai lancé un événement artistique à Guédiawaye ! »
             </p>
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 border-dashed border-0'>
-              <div className='flex-align gap-24 '>
+              <div className='flex-align gap-24'>
                 <img
-                  src='assets/images/thumbs/user-two-img3.png'
+                  src='assets/images/thumbs/testi-img3.png'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />
                 <div>
-                  <h5 className='mb-8 fw-medium'>Awa S.</h5>
-                  <span className='text-neutral-700'>Entrepreneure culturelle</span>
+                  <h5 className='mb-8 fw-medium'>Saliou F.</h5>
+                  <span className='text-neutral-700'>Entrepreneur culturel</span>
                 </div>
               </div>
               <span className='quate text-48 d-flex opacity-25'>

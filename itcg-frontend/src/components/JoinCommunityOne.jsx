@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const JoinCommunityOne = () => {
   return (
     <section className='join-community'>
@@ -9,10 +11,10 @@ const JoinCommunityOne = () => {
                 <div className='join-community__content'>
                   <div className='mb-40'>
                     <h2 className='mb-24 wow bounceIn'>
-                      Rejoins la communauté ITCG dès aujourd’hui
+                      Rejoins la communauté MAG dès aujourd’hui
                     </h2>
                     <p className='text-neutral-500 text-line-2 wow bounceInUp'>
-                      Inscris-toi gratuitement à nos programmes d’initiation, d’accompagnement ou de formation. Le numérique et la culture t’attendent !
+                      Inscris-toi gratuitement à nos programmes d’initiation, d’accompagnement ou de formation. Le numérique, l’art et la culture t’attendent à Guédiawaye !
                     </p>
                   </div>
                   <form action='#'>
@@ -49,13 +51,14 @@ const JoinCommunityOne = () => {
                       data-aos='fade-up-left'
                       data-aos-duration={800}
                     >
-                      <select className='bg-white text-black border border-transparent focus-border-main-600 h-48 rounded-pill px-16 ps-60 outline-0 w-100 text-neutral-300'>
-                        <option value=''>Choisis ton domaine</option>
-                        <option value='design'>Design Graphique</option>
-                        <option value='audiovisuel'>Audiovisuel</option>
-                        <option value='numerique'>Développement Web</option>
-                        <option value='entrepreneuriat'>Entrepreneuriat Culturel</option>
-                      </select>
+                     <select className='bg-white text-black border border-transparent focus-border-main-600 h-48 rounded-pill px-16 ps-60 outline-0 w-100 text-neutral-300'>
+                      <option value=''>Choisis ton programme ou domaine d’intérêt</option>
+                      <option value='formation-numerique'>Formation Numérique</option>
+                      <option value='culture-et-art'>Culture et Art</option>
+                      <option value='entrepreneuriat-culturel'>Entrepreneuriat Culturel</option>
+                      <option value='insertion-emploi'>Insertion professionnelle et emploi</option>
+                    </select>
+
                       <span className='bg-white text-neutral-200 text-2xl flex-center w-48 h-48 rounded-circle border border-main-25 border-4 position-absolute inset-inline-start-0 top-50 translate-middle-y'>
                         <i className='ph-bold ph-book' />
                       </span>
@@ -81,7 +84,7 @@ const JoinCommunityOne = () => {
                 <div className='join-community__thumb text-end position-relative'>
                   <img
                     src='assets/images/thumbs/join-community-img.png'
-                    alt='Illustration communauté ITCG'
+                    alt='Illustration communauté MAG'
                     className='wow bounceIn'
                     data-tilt=''
                     data-tilt-max={12}
@@ -95,7 +98,7 @@ const JoinCommunityOne = () => {
                     </span>
                     <div className='text-start'>
                       <h6 className='mb-4'>+3 500</h6>
-                      <span className=''>Jeunes déjà formés</span>
+                      <span className=''>Jeunes déjà formés à Guédiawaye</span>
                     </div>
                   </div>
                 </div>

@@ -2,8 +2,8 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
-const InstructorOne = () => {
-  const instructorSliderRef = useRef(null);
+const PortraitsActeursMAG = () => {
+  const acteursSliderRef = useRef(null);
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -53,17 +53,17 @@ const InstructorOne = () => {
       />
       <div className='container'>
         <div className='section-heading text-center'>
-          <h2 className='mb-24 wow bounceIn'>Course Instructors</h2>
+          <h2 className='mb-24 wow bounceIn'>Nos Acteurs Engagés</h2>
           <p className=' wow bounceInUp'>
-            Join us on this journey of discovery, growth, and transformation.
-            Together, let's shape a brighter future
+            Découvrez les porteurs de projets et associations qui font vivre l'innovation sociale à Guédiawaye
           </p>
         </div>
         <Slider
           {...settings}
-          ref={instructorSliderRef}
+          ref={acteursSliderRef}
           className='instructor-slider'
         >
+          {/* Acteur 1 - Entrepreneur Tech */}
           <div
             className='instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30'
             data-aos='fade-up'
@@ -71,12 +71,12 @@ const InstructorOne = () => {
           >
             <div className='rounded-12 overflow-hidden position-relative bg-dark-yellow'>
               <Link
-                to='/instructor-details'
+                to='/profil-acteur'
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
                   src='assets/images/thumbs/instructor-img1.png'
-                  alt='Course'
+                  alt='Aïssatou Fall - Entrepreneure'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
               </Link>
@@ -115,25 +115,25 @@ const InstructorOne = () => {
               </div>
               <div className=''>
                 <h4 className='mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0'>
-                  <Link to='/instructor-details' className='link text-line-2'>
-                    Devon Lane
+                  <Link to='/profil-acteur' className='link text-line-2'>
+                    Aïssatou Fall
                   </Link>
                 </h4>
                 <div className='flex-between gap-8 flex-wrap mb-16'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-lightbulb' />
+                      <i className='ph-bold ph-rocket-launch' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      Web Developer
+                      Entrepreneure Tech
                     </span>
                   </div>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-watch' />
+                      <i className='ph-bold ph-projector-screen' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      7 Course
+                      1 Projet
                     </span>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const InstructorOne = () => {
                       <i className='ph-bold ph-users' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      15k Students
+                      12 Bénéficiaires
                     </span>
                   </div>
                   <div className='flex-align gap-4'>
@@ -151,24 +151,26 @@ const InstructorOne = () => {
                       <i className='ph-fill ph-star' />
                     </span>
                     <span className='text-lg text-neutral-700'>
-                      4.6
-                      <span className='text-neutral-100'>(2.4k)</span>
+                      4.8
+                      <span className='text-neutral-100'>(24)</span>
                     </span>
                   </div>
                 </div>
               </div>
               <div className='pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
-                  to='/instructor-details'
+                  to='/profil-acteur'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                   tabIndex={0}
                 >
-                  View Profile
+                  Voir le profil
                   <i className='ph ph-arrow-right' />
                 </Link>
               </div>
             </div>
           </div>
+
+          {/* Acteur 2 - Association */}
           <div
             className='instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30'
             data-aos='fade-up'
@@ -176,12 +178,12 @@ const InstructorOne = () => {
           >
             <div className='rounded-12 overflow-hidden position-relative bg-dark-yellow'>
               <Link
-                to='/instructor-details'
+                to='/profil-acteur'
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
                   src='assets/images/thumbs/instructor-img2.png'
-                  alt='Course'
+                  alt='Mamadou Diop - Association'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
               </Link>
@@ -220,35 +222,35 @@ const InstructorOne = () => {
               </div>
               <div className=''>
                 <h4 className='mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0'>
-                  <Link to='/instructor-details' className='link text-line-2'>
-                    John Doe
+                  <Link to='/profil-acteur' className='link text-line-2'>
+                    Mamadou Diop
                   </Link>
                 </h4>
                 <div className='flex-between gap-8 flex-wrap mb-16'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-lightbulb' />
+                      <i className='ph-bold ph-users-three' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      WordPress Expert
+                      Association
                     </span>
                   </div>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-watch' />
+                      <i className='ph-bold ph-projector-screen' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      6 Course
+                      3 Projets
                     </span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 flex-wrap'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-users' />
+                      <i className='ph-bold ph-handshake' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      55k Students
+                      150 Membres
                     </span>
                   </div>
                   <div className='flex-align gap-4'>
@@ -256,24 +258,26 @@ const InstructorOne = () => {
                       <i className='ph-fill ph-star' />
                     </span>
                     <span className='text-lg text-neutral-700'>
-                      4.6
-                      <span className='text-neutral-100'>(2.4k)</span>
+                      4.9
+                      <span className='text-neutral-100'>(36)</span>
                     </span>
                   </div>
                 </div>
               </div>
               <div className='pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
-                  to='/instructor-details'
+                  to='/profil-acteur'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                   tabIndex={0}
                 >
-                  View Profile
+                  Voir le profil
                   <i className='ph ph-arrow-right' />
                 </Link>
               </div>
             </div>
           </div>
+
+          {/* Acteur 3 - Artiste */}
           <div
             className='instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30'
             data-aos='fade-up'
@@ -281,12 +285,12 @@ const InstructorOne = () => {
           >
             <div className='rounded-12 overflow-hidden position-relative bg-dark-yellow'>
               <Link
-                to='/instructor-details'
+                to='/profil-acteur'
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
                   src='assets/images/thumbs/instructor-img3.png'
-                  alt='Course'
+                  alt='Fatou Ndiaye - Artiste'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
               </Link>
@@ -325,35 +329,35 @@ const InstructorOne = () => {
               </div>
               <div className=''>
                 <h4 className='mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0'>
-                  <Link to='/instructor-details' className='link text-line-2'>
-                    Alexandar
+                  <Link to='/profil-acteur' className='link text-line-2'>
+                    Fatou Ndiaye
                   </Link>
                 </h4>
                 <div className='flex-between gap-8 flex-wrap mb-16'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-lightbulb' />
+                      <i className='ph-bold ph-palette' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      UI/UX Designer
+                      Artiste Plasticienne
                     </span>
                   </div>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-watch' />
+                      <i className='ph-bold ph-projector-screen' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      12 Course
+                      2 Projets
                     </span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 flex-wrap'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-users' />
+                      <i className='ph-bold ph-graduation-cap' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      36k Students
+                      45 Formés
                     </span>
                   </div>
                   <div className='flex-align gap-4'>
@@ -361,24 +365,26 @@ const InstructorOne = () => {
                       <i className='ph-fill ph-star' />
                     </span>
                     <span className='text-lg text-neutral-700'>
-                      4.6
-                      <span className='text-neutral-100'>(2.4k)</span>
+                      4.7
+                      <span className='text-neutral-100'>(18)</span>
                     </span>
                   </div>
                 </div>
               </div>
               <div className='pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
-                  to='/instructor-details'
+                  to='/profil-acteur'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                   tabIndex={0}
                 >
-                  View Profile
+                  Voir le profil
                   <i className='ph ph-arrow-right' />
                 </Link>
               </div>
             </div>
           </div>
+
+          {/* Acteur 4 - Environnement */}
           <div
             className='instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30'
             data-aos='fade-up'
@@ -386,12 +392,12 @@ const InstructorOne = () => {
           >
             <div className='rounded-12 overflow-hidden position-relative bg-dark-yellow'>
               <Link
-                to='/instructor-details'
+                to='/profil-acteur'
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
-                  src='assets/images/thumbs/instructor-img2.png'
-                  alt='Course'
+                  src='assets/images/thumbs/instructor-img4.png'
+                  alt='Ibrahima Sarr - Environnement'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
               </Link>
@@ -430,35 +436,35 @@ const InstructorOne = () => {
               </div>
               <div className=''>
                 <h4 className='mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0'>
-                  <Link to='/instructor-details' className='link text-line-2'>
-                    John Doe
+                  <Link to='/profil-acteur' className='link text-line-2'>
+                    Ibrahima Sarr
                   </Link>
                 </h4>
                 <div className='flex-between gap-8 flex-wrap mb-16'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-lightbulb' />
+                      <i className='ph-bold ph-leaf' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      WordPress Expert
+                      Éco-entrepreneur
                     </span>
                   </div>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-watch' />
+                      <i className='ph-bold ph-projector-screen' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      6 Course
+                      2 Projets
                     </span>
                   </div>
                 </div>
                 <div className='flex-between gap-8 flex-wrap'>
                   <div className='flex-align gap-8'>
                     <span className='text-neutral-700 text-2xl d-flex'>
-                      <i className='ph-bold ph-users' />
+                      <i className='ph-bold ph-plant' />
                     </span>
                     <span className='text-neutral-700 text-lg fw-medium'>
-                      55k Students
+                      8 Communautés
                     </span>
                   </div>
                   <div className='flex-align gap-4'>
@@ -467,18 +473,18 @@ const InstructorOne = () => {
                     </span>
                     <span className='text-lg text-neutral-700'>
                       4.6
-                      <span className='text-neutral-100'>(2.4k)</span>
+                      <span className='text-neutral-100'>(31)</span>
                     </span>
                   </div>
                 </div>
               </div>
               <div className='pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
-                  to='/instructor-details'
+                  to='/profil-acteur'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
                   tabIndex={0}
                 >
-                  View Profile
+                  Voir le profil
                   <i className='ph ph-arrow-right' />
                 </Link>
               </div>
@@ -490,7 +496,7 @@ const InstructorOne = () => {
           <button
             type='button'
             id='instructor-prev'
-            onClick={() => instructorSliderRef.current.slickPrev()}
+            onClick={() => acteursSliderRef.current.slickPrev()}
             className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
           >
             <i className='ph ph-caret-left' />
@@ -498,7 +504,7 @@ const InstructorOne = () => {
           <button
             type='button'
             id='instructor-next'
-            onClick={() => instructorSliderRef.current.slickNext()}
+            onClick={() => acteursSliderRef.current.slickNext()}
             className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
           >
             <i className='ph ph-caret-right' />
@@ -509,4 +515,4 @@ const InstructorOne = () => {
   );
 };
 
-export default InstructorOne;
+export default PortraitsActeursMAG;

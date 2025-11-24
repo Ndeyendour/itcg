@@ -2,7 +2,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import CertificateOne from "../components/CertificateOne";
 import ContactInner from "../components/ContactInner";
 import FooterOne from "../components/FooterOne";
-import HeaderOne from "../components/HeaderOne";
+import HeaderTwo from "../components/HeaderTwo";
 import Animation from "../helper/Animation";
 import Preloader from "../helper/Preloader";
 
@@ -16,7 +16,7 @@ const ContactPage = () => {
       <Animation />
 
       {/* HeaderTwo */}
-      <HeaderOne />
+      <HeaderTwo />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Contact"} />

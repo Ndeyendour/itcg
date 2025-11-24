@@ -1,9 +1,10 @@
 import BannerFive from "../components/BannerFive";
+import Breadcrumb from "../components/Breadcrumb";
 import CounterFour from "../components/CounterFour";
 import FeaturesThree from "../components/FeaturesThree";
 import FooterFour from "../components/FooterFour";
 import GallerySectionTwo from "../components/GallerySectionTwo";
-import HeaderThree from "../components/HeaderThree";
+import HeaderTwo from "../components/HeaderThree";
 import InstructorTwo from "../components/InstructorTwo";
 import KidsCourses from "../components/KidsCourses";
 import MarqueeOne from "../components/MarqueeOne";
@@ -24,32 +25,13 @@ const Gotomarketguide = () => {
       {/* HeaderThree */}
       <HeaderTwo />
 
-      {/* BannerFive */}
-      <BannerFive />
+       <Breadcrumb title={"Acces au marche"} />
+
 
       {/* FeaturesThree */}
       <FeaturesThree />
 
-      {/* KidsCourses */}
-      <KidsCourses />
-
-      {/* CounterFour */}
-      <CounterFour />
-
-      {/* MarqueeOne */}
-      <MarqueeOne />
-
-      {/* GallerySectionTwo */}
-      <GallerySectionTwo />
-
-      {/* InstructorTwo */}
-      <InstructorTwo />
-
-      {/* PopularTwo */}
-      <PopularTwo />
-
-      {/* TestimonialsFour */}
-      <TestimonialsFour />
+      
 
       {/* FooterFour */}
       <FooterFour />

@@ -18,7 +18,17 @@ const HeaderTwo = () => {
     };
   }, []);
 
-  const [selectedOption, setSelectedOption] = useState(null);
+  const options = [
+    { value: 1, label: "Formations" },
+    { value: 2, label: "Conferences" },
+    { value: 3, label: "Evenement" },
+    { value: 4, label: "Co-working" },
+    { value: 5, label: "Reunion B to B" },
+    // { value: 6, label: "Social Science" },
+    // { value: 7, label: "Chemistry" },
+  ];
+
+  const [selectedOption, setSelectedOption] = useState(options[0]);
 
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
@@ -51,8 +61,7 @@ const HeaderTwo = () => {
     }
   };
 
-  // Nouveau menuItems selon le header précédent
-  const menuItems = [
+const menuItems = [
     {
       label: "À propos",
       links: [
@@ -62,8 +71,8 @@ const HeaderTwo = () => {
         { to: "/faq", label: "Questions fréquentes (FAQ)" },
         { to: "/plan-itcg.pdf", label: "Plan d'action d'ITCG", external: true },
         { to: "/contact", label: "Contactez-nous" },
-        { to: "#", label: "Évolution d'ITCG | Rapport sur 5 ans" },
-        { to: "#", label: "ITCG | Perspectives d’avenir" },
+        // { to: "#", label: "Évolution d'ITCG | Rapport sur 5 ans" },
+        // { to: "#", label: "ITCG | Perspectives d’avenir" },
       ],
     },
     {
@@ -72,7 +81,7 @@ const HeaderTwo = () => {
         // { to: "#", label: "Prabhaav | Livre de faits – 9 ans" },
         { to: "/about-four", label: "Reconnaissance et avantages de l’ITCG" },
         { to: "/reconnaissance", label: "Demander la reconnaissance ITCG" },
-        { to: "/garantie", label: "Demander des exonérations fiscales" },
+        { to: "#", label: "Demander des exonérations fiscales" },
         { to: "/verifier-le-certificat", label: "Vérifier/Télécharger le certificat" },
         // { to: "#", label: "Accéder/Modifier les détails du certificat" },
         { to: "#", label: "Directives de reconnaissance ITCG" },
@@ -113,14 +122,14 @@ const HeaderTwo = () => {
     {
       label: "Initiative",
       links: [
-        { to: "#", label: "Prix Nationaux des Startups 5.0" },
-        { to: "#", label: "BRICS 2025" },
+        // { to: "#", label: "Prix Nationaux des Startups 5.0" },
+        // { to: "#", label: "BRICS 2025" },
         { to: "#", label: "Journée Nationale des Startups 2025" },
         { to: "#", label: "Classement des Écosystèmes Startup des États" },
-        { to: "#", label: "Forum Startup de l'Organisation de Coopération de Shanghai (OCS)" },
-        { to: "#", label: "Programme de Financement Seed itcg" },
-        { to: "#", label: "Plateforme de Mentorat MAARG" },
-        { to: "#", label: "Startup Investor Connect" },
+        // { to: "#", label: "Forum Startup de l'Organisation de Coopération de Shanghai (OCS)" },
+        { to: "/about", label: "Programme de Financement Seed itcg" },
+        { to: "#", label: "Plateforme de Mentorat" },
+        // { to: "#", label: "Startup Investor Connect" },
       ],
     },
     {
@@ -150,7 +159,6 @@ const HeaderTwo = () => {
       ],
     },
   ];
-
   return (
     <>
       <div className={`side-overlay ${isMenuActive ? "show" : ""}`}></div>
@@ -172,7 +180,7 @@ const HeaderTwo = () => {
                 <input
                   type='text'
                   className='common-input border-0 px-0 py-10'
-                  placeholder='Search...'
+                  placeholder='Search Tutors...'
                 />
                 <button
                   type='submit'
@@ -189,19 +197,19 @@ const HeaderTwo = () => {
                 to='/sign-in'
                 className='btn btn-outline-main rounded-pill flex-align gap-8'
               >
-                Sign In
+                Login
                 <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
               </Link>
               <Link
                 to='/sign-up'
                 className='btn btn-main rounded-pill flex-align gap-8'
               >
-                Sign Up
+                Devenir partenaire
                 <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
               </Link>
             </div>
             <Link
-              to='/login'
+              to='/sign-in'
               className='d-lg-none flex-shrink-0 w-52 h-52 bg-white hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600'
             >
               <i className='ph ph-user-circle' />
@@ -219,6 +227,25 @@ const HeaderTwo = () => {
       >
         <div className='container'>
           <nav className='header-inner flex-between gap-8'>
+            {/* Select Start */}
+            <div className='header-select   rounded-pill position-relative ms-0'>
+              <span className='select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex'>
+                <i className='ph-bold ph-squares-four' />
+              </span>
+
+              <div className='custom__select'>
+                <Select
+                  classNames={{
+                    control: (state) =>
+                      state.isFocused ? " border-focus" : "border-neutral-30",
+                  }}
+                  value={selectedOption}
+                  onChange={setSelectedOption}
+                  options={options}
+                />
+              </div>
+            </div>
+            {/* Select End */}
             {/* Menu Start  */}
             <div className='header-menu d-lg-block d-none'>
               <ul className='nav-menu flex-align'>
@@ -239,24 +266,12 @@ const HeaderTwo = () => {
                               pathname === link.to && "activePage"
                             }`}
                           >
-                           {link.external ? (
-  <a
-    href={link.to}
-    target='_blank'
-    rel='noopener noreferrer'
-    className='nav-submenu__link hover-bg-neutral-30'
-  >
-    {link.label}
-  </a>
-) : (
-  <Link
-    to={link.to}
-    className='nav-submenu__link hover-bg-neutral-30'
-  >
-    {link.label}
-  </Link>
-)}
-
+                            <Link
+                              to={link.to}
+                              className='nav-submenu__link hover-bg-neutral-30'
+                            >
+                              {link.label}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -275,6 +290,35 @@ const HeaderTwo = () => {
               </ul>
             </div>
             {/* Menu End  */}
+            {/* Header Right start */}
+            <div className='header-right flex-align'>
+              <Link
+                to='#'
+                className='info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6'
+              >
+                <i className='ph-bold ph-heart' />
+                <span className='w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                  5
+                </span>
+              </Link>
+              <Link
+                to='#'
+                className='info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6'
+              >
+                <i className='ph-bold ph-shopping-cart-simple' />
+                <span className='w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                  3
+                </span>
+              </Link>
+              <button
+                type='button'
+                onClick={toggleMenu}
+                className='toggle-mobileMenu d-lg-none text-neutral-200 flex-center'
+              >
+                <i className='ph ph-list' />
+              </button>
+            </div>
+            {/* Header Right End  */}
           </nav>
         </div>
       </header>
@@ -306,24 +350,12 @@ const HeaderTwo = () => {
                     <ul className={`nav-submenu scroll-sm`}>
                       {item.links.map((link, linkIndex) => (
                         <li key={linkIndex} className='nav-submenu__item'>
-                          {link.external ? (
-  <a
-    href={link.to}
-    target='_blank'
-    rel='noopener noreferrer'
-    className='nav-submenu__link hover-bg-neutral-30'
-  >
-    {link.label}
-  </a>
-) : (
-  <Link
-    to={link.to}
-    className='nav-submenu__link hover-bg-neutral-30'
-  >
-    {link.label}
-  </Link>
-)}
-
+                          <Link
+                            to={link.to}
+                            className='nav-submenu__link hover-bg-neutral-30'
+                          >
+                            {link.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -337,6 +369,24 @@ const HeaderTwo = () => {
                 )
               )}
             </ul>
+            <div className='d-sm-none d-block mt-24'>
+              <div className='header-select border border-neutral-30 bg-main-25 rounded-pill position-relative'>
+                <span className='select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex'>
+                  <i className='ph-bold ph-squares-four' />
+                </span>
+                <div className='custom__select'>
+                  <Select
+                    classNames={{
+                      control: (state) =>
+                        state.isFocused ? " border-focus" : "border-neutral-30",
+                    }}
+                    value={selectedOption}
+                    onChange={setSelectedOption}
+                    options={options}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

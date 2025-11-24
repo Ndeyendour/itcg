@@ -10,20 +10,23 @@ const CounterThreeV2 = () => {
     <section className='counter-three py-120 bg-main-25'>
       <div className='container'>
         <div className='p-16 rounded-16 bg-white'>
+           <div className='text-center mb-40'>
+        <h3 className='text-neutral-700 mb-16'>La MAG en Chiffres</h3>
+        <p className='text-neutral-500'>Quelques indicateurs de notre action sur le territoire</p>
+      </div>
           <div className='row gy-4 justify-content-center'>
 
             {/* Row 1: 3 éléments */}
             <div className='col-xl-4 col-sm-6' data-aos='fade-up' data-aos-duration={200}>
               <div className='counter-three-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30'>
                 <span className='w-80 h-80 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-                  <i className='animate__wobble ph ph-calendar-blank' />
+                  <i className='animate__wobble ph ph-users' />
                 </span>
                 <div ref={ref}>
-                  <h5 className='display-four mb-16 text-neutral-700 counter'>Âge de l'entreprise</h5>
+                  <h3 className='display-four mb-16 text-neutral-700 counter'>150+ Associations</h3>
                 </div>
                 <span className='text-neutral-500 text-lg'>
-                 
-                  <small>La durée d'existence et d'exploitation ne doit pas dépasser 10 ans à compter de la date de constitution.</small>
+                  <small>Accompagnées dans leur développement et renforcement de capacités depuis notre création.</small>
                 </span>
               </div>
             </div>
@@ -31,14 +34,13 @@ const CounterThreeV2 = () => {
             <div className='col-xl-4 col-sm-6' data-aos='fade-up' data-aos-duration={400}>
               <div className='counter-three-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30'>
                 <span className='w-80 h-80 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24'>
-                  <i className='animate__wobble ph ph-buildings' />
+                  <i className='animate__wobble ph ph-rocket-launch' />
                 </span>
                 <div>
-                  <h5 className='display-four mb-16 text-neutral-700 counter'>Type de compagnie</h5>
+                  <h3 className='display-four mb-16 text-neutral-700 counter'>45+ Startups</h3>
                 </div>
                 <span className='text-neutral-500 text-lg'>
-                  
-                  <small>Constituée en société à responsabilité limitée, en société de personnes enregistrée ou en société à responsabilité limitée</small>
+                  <small>Incubées dans notre programme Tech & Art, créant de l'innovation locale et des emplois.</small>
                 </span>
               </div>
             </div>
@@ -46,13 +48,13 @@ const CounterThreeV2 = () => {
             <div className='col-xl-4 col-sm-6' data-aos='fade-up' data-aos-duration={600}>
               <div className='counter-three-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30'>
                 <span className='w-80 h-80 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-                  <i className='animate__wobble ph ph-currency-inr' />
+                  <i className='animate__wobble ph ph-graduation-cap' />
                 </span>
                 <div>
-                  <h5 className='display-four mb-16 text-neutral-700 counter'>Chiffre d'affaires</h5>
+                  <h3 className='display-four mb-16 text-neutral-700 counter'>300+ Formés</h3>
                 </div>
                 <span className='text-neutral-500 text-lg'>
-                  <small>Devrait avoir un chiffre d'affaires annuel ne dépassant pas Rs. 100 crore pour l'un des exercices depuis sa constitution.</small>
+                  <small>Personnes formées dans nos ateliers et programmes de renforcement de capacités professionnelles.</small>
                 </span>
               </div>
             </div>
@@ -61,13 +63,13 @@ const CounterThreeV2 = () => {
             <div className='col-xl-4 col-sm-6' data-aos='fade-up' data-aos-duration={800}>
               <div className='counter-three-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30'>
                 <span className='w-80 h-80 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24'>
-                  <i className='animate__wobble ph ph-split-horizontal' />
+                  <i className='animate__wobble ph ph-handshake' />
                 </span>
                 <div>
-                  <h5 className='display-four mb-16 text-neutral-700 counter'>Entité d'origine</h5>
+                  <h3 className='display-four mb-16 text-neutral-700 counter'>25 Partenaires</h3>
                 </div>
                 <span className='text-neutral-500 text-lg'>
-                  <small>Une entité ne doit pas avoir été formée par la scission ou la reconstruction d’une entreprise déjà existante.</small>
+                  <small>Institutionnels et techniques qui soutiennent nos actions et programmes d'accompagnement.</small>
                 </span>
               </div>
             </div>
@@ -75,13 +77,13 @@ const CounterThreeV2 = () => {
             <div className='col-xl-4 col-sm-6' data-aos='fade-up' data-aos-duration={1000}>
               <div className='counter-three-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30'>
                 <span className='w-80 h-80 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24'>
-                  <i className='animate__wobble ph ph-lightbulb' />
+                  <i className='animate__wobble ph ph-calendar-check' />
                 </span>
                 <div>
-                  <h5 className='display-four mb-16 text-neutral-700 counter'>Innovant et évolutif</h5>
+                  <h3 className='display-four mb-16 text-neutral-700 counter'>50+ Événements</h3>
                 </div>
                 <span className='text-neutral-500 text-lg'>
-                  <small>Doit travailler au développement ou à l'amélioration d'un produit, d'un processus ou d'un service et/ou avoir un modèle commercial évolutif avec un fort potentiel de création de richesse et d'emplois.</small>
+                  <small>Organisés chaque année : conférences, ateliers, forums et rencontres professionnelles.</small>
                 </span>
               </div>
             </div>

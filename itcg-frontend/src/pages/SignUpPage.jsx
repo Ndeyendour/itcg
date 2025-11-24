@@ -19,7 +19,7 @@ const SignUpPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Sign Up"} />
+      <Breadcrumb title={"S'inscrire"} />
 
       {/* SignUpInner */}
       <SignUpInner />

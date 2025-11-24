@@ -24,7 +24,7 @@ const AboutTwoPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Initiative ITCG"} />
+      <Breadcrumb title={"Initiative MAG"} />
 
       {/* FeaturesTwo */}
       <FeaturesTwo />

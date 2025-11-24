@@ -66,7 +66,7 @@ useEffect(() => {
       default: type = '';
     }
 
-    axios.get(`https://itcg.onrender.com//api/organizations?type=${type}`)
+    axios.get(`    http://localhost:5000/api/organizations?type=${type}`)
       .then(response => {
         setOrganizations(response.data);
       })
@@ -79,7 +79,7 @@ useEffect(() => {
 useEffect(() => {
   if (activeTab === 'investors') {
     setLoadingInvestors(true);
-    axios.get('https://itcg.onrender.com//api/investors')
+    axios.get('    http://localhost:5000/api/investors')
       .then(response => {
         console.log("Investors data:", response.data);
         setInvestors(response.data);
@@ -95,7 +95,7 @@ useEffect(() => {
 useEffect(() => {
   if (activeTab === 'mentors') {
     setLoading(true);
-    axios.get('https://itcg.onrender.com//api/mentors')
+    axios.get('    http://localhost:5000/api/mentors')
       .then(response => {
         console.log("Réponse API:", response.data); // Vérifiez les données reçues
         setMentors(response.data);
@@ -115,7 +115,7 @@ useEffect(() => {
   const [startups, setStartups] = useState([]);
 
   useEffect(() => {
-    axios.get("https://itcg.onrender.com//api/startups") // Remplace par ton URL si différent
+    axios.get("    http://localhost:5000/api/startups") // Remplace par ton URL si différent
       .then(res => setStartups(res.data))
       .catch(err => console.error("Erreur de chargement des startups :", err));
   }, []);

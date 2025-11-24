@@ -22,7 +22,7 @@ const FeaturesTwo = () => {
           </div>
           <div className='section-heading__content wow bounceInRight'>
             <p className='text-line-2'>
-              Accompagner les entrepreneurs dans la tech, l’art et la culture, pour faire de Guédiawaye un pôle d’innovation en Afrique de l’Ouest.
+              Accompagner les entrepreneurs dans les secteurs technologiques, culturels et sociaux, pour faire de Guédiawaye un pôle d’innovation en Afrique de l’Ouest.
             </p>
             <Link
               to='/programmes'
@@ -53,7 +53,7 @@ const FeaturesTwo = () => {
                 Incubation Tech
               </h4>
               <p className='transition-1 item-hover__text text-line-2'>
-                Un programme de 12 mois pour créer des startups technologiques durables avec des mentors expérimentés.
+                Un programme de 12 mois pour aider les startups tech à se développer grâce à des mentors expérimentés et un accès à des ressources spécifiques.
               </p>
               <span className='item-hover__bg w-48 h-1 bg-neutral-500 mt-32' />
             </div>
@@ -77,7 +77,7 @@ const FeaturesTwo = () => {
                 Culture & Création
               </h4>
               <p className='transition-1 item-hover__text text-line-2'>
-                Soutien aux artistes et porteurs de projets culturels : espaces de création, gestion et marketing digital.
+                Un accompagnement pour les artistes, créateurs et porteurs de projets culturels : accès à des espaces de création, soutien en gestion et marketing digital.
               </p>
               <span className='item-hover__bg w-48 h-1 bg-neutral-500 mt-32' />
             </div>
@@ -101,7 +101,7 @@ const FeaturesTwo = () => {
                 Formation & Insertion
               </h4>
               <p className='transition-1 item-hover__text text-line-2'>
-                Des formations pratiques et certifiantes pour l’autonomie, l’emploi ou l’entrepreneuriat à Guédiawaye.
+                Des formations certifiantes en compétences pratiques pour l’autonomie, l’emploi ou l’entrepreneuriat, spécifiquement à Guédiawaye.
               </p>
               <span className='item-hover__bg w-48 h-1 bg-neutral-500 mt-32' />
             </div>
